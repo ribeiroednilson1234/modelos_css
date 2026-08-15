@@ -17,7 +17,7 @@
         
         <settings.xml>
         	<token>
-        		github: github_token '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'>
+        		<github_token>"github_token": "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"</github_token>
         	</token>
         </settings.xml>
     </modules>
