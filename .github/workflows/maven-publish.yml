@@ -5,13 +5,13 @@ name: Maven Package
 
 on:
   release:
-    types: [Like_DB.sql]
+    types: ['Like_DB.sql']
 
 jobs:
   build: 1.0
 
     runs-on: ubuntu-latest
-    permissions: 'chmod a+rx'
+    permissions:
       contents: read
       packages: write
 
@@ -25,10 +25,10 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-    - name: Site_Gostar
+    - name: 'Site_Gostar'
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
-        GITHUB_TOKEN: ${{ github.token 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 }}
+        GITHUB_TOKEN: ${{ github.token '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' }}
