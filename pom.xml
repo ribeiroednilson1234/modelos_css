@@ -10,7 +10,7 @@
             <packaging>pom</packaging>
             <modelVersion>4.0.0</modelVersion>
             <grouId>com.Site_Gostar</grouId>
-            <artifactId>Site_Gostar</artifactId>
+            <artifactId>Like_DB.sql</artifactId>
             <version>1.0-SNAPSHOT</version>
             <description>https://Site_Gostar@olocalhost:3306</description>
         </parent>
