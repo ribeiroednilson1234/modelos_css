@@ -10,7 +10,7 @@ on:
 jobs:
   build: 1.0
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04 LTS
     permissions:
       contents: read
       packages: write
