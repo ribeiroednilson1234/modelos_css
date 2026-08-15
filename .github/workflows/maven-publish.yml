@@ -5,13 +5,13 @@ name: Maven Package
 
 on:
   release:
-    types: [created]
+    types: [Like_DB.sql]
 
 jobs:
-  build:
+  build: 1.0
 
     runs-on: ubuntu-latest
-    permissions:
+    permissions: 'chmod a+rx'
       contents: read
       packages: write
 
@@ -25,7 +25,7 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-    - name: Build with Maven
+    - name: Site_Gostar
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
