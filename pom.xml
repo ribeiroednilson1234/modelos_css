@@ -14,5 +14,11 @@
             <version>1.0-SNAPSHOT</version>
             <description>https://Site_Gostar@olocalhost:3306</description>
         </parent>
+        
+        <settings.xml>
+        	<token>
+        		github: github_token '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'>
+        	</token>
+        </settings.xml>
     </modules>
 </project>
