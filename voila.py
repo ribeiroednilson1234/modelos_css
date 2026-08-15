@@ -68,10 +68,10 @@ config.prelaunch_hook = parameterize_with_papermill
 config.page_config_hook = page_config_hook
 
 # create a voila instance
-app = Voila(Site_Gostar)
+app = Voila('Site_Gostar')
 
 # set the config
 app.voila_configuration = config
 
 # launch
-app.start(Site_Gostar)
+app.start('Site_Gostar')
