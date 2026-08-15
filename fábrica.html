@@ -1,0 +1,102 @@
+<!Doctype html>
+<html-PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"lang="pt-br, ISO 639-standard">
+<head>
+<script>
+str = str.replace(/\<\/script>/g, encodeURIComponent(String("\n")));
+function = window.alert(Bem vindo !\nEsteja atento para as informaçoes no formulário de inserção de produtos para o estoque.\nNão esqueça de sempre escolher o código correto e o medelo do produto.\nEstas informações serão pedidas no ato da inserção do produto pelo formlário da fábrica.);
+</script>
+<meta properly="Ednilson Alves"author="Ednilson Alves Ribeiro"content="HTML, CSS, PHP, MySQL, JavaScript">
+<meta http-equiv="X-UA-Compatible"Content="IE-edge, Chrome, Firefox, Ópera, Brave">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<link href="Site_Gostar/Fabrica/fabricafolha.css" rel="stylesheet" type="text/css" media="all">
+<title>Fábrica</title>
+</head>
+<body>
+	<header><h1><img src="foto4.png"width="50px"height="50px"><h6>DENTRO DA FÁBRICA</h1></header>
+<div class=".topnav">
+	<nav>
+		<ul>
+			<li><a href="Site_Gostar/Fabrica/fábrica.html">DENTRO DA FÁBRICA</a></li>
+			<li><a href="Site_Gostar/Fabrica/estoque.html">ESTOQUE</a></li>
+			<li><a href="Site_Gostar/Fabrica/balanço.html">BALANÇO</a></li>
+		</ul>
+	</nav>
+</div>
+<div class=".column">
+<div class=".column .left">
+	<article><h3>ARTIGOS - ESPAÇO RESERVADO PARA A EQUIPE DE DESIGN<h3>
+	  <div class=".img">
+	  <figure>
+	    <img src="Site_Gostar/Fabrica/foto1.jpeg"width="100px"height="150px">
+	      <figcaption>IMAGEM DE FÁBRICA</figcaption></img>
+		  <img src="Site_Gostar/Fabrica/foto2.jpeg"width="100px"height="150px">
+	      <figcaption>IMAGEM  DE FÁBRICA</figcaption></img>
+		  <img src="Site_Gostar/Fabrica/foto3.jpeg"width="100px"height="150px">
+	      <figcaption>IMAGEM DE FÁBRICA</figcaption></img>
+	  </figure>
+	  </div>
+</article>
+</div>
+<div class=".column .middle">
+	<section><h3>SEÇAO - ESTES FORMULÁRIOS SÃO ESPECÍFICOS PARA A EQUIPE DE PRODUÇÃO E SUPREVISÃO DE PRODUTOS</h3>
+  <div class="column.middle">
+    <div class=".row.compra">
+<caption>
+    <fieldset><legend><h3>FORMULÁRIO DE CADASTRO DE PRODUÇÃO NO ESTOQUE</h3></legend>
+    <form method="POST" name="Produzidos" id="Prodizidos_id" action="produzidos.php" . action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data">
+    	    <p>Limpe os campos dos formulários antes de fazer os lançamentos</p><br>
+    	    <input type="reset"type="reset"value="Limpar os campos"action="produzidos.php"><br><br>
+    	  <hr><fieldset><legend>CADASTRO DE MÓVEIS PRODUZIDOS</legend>
+    	    <br><label>( CADEIRA ) QUANTIDADE PRODUZIDA</label></br>
+    	    <input type="text"name="Cadeira"action="produzidos.php"maxlength="7"size="50px" required/></br>
+    	    <label>( MESA ) QUANTIDADE PRODUZIDA</lable></br>
+    	    <input type="text"name="Mesa"action="produzidos.php"maxlength="4"size="50px"  required/></br>
+    	    <label>( CONJUNTO ) QUANTIDADE PRODUZIDA</label></br>
+    	    <input type="text"name="Conjunto"action="produzidos.php"maxlength="8"size="50px"  required/></br>
+    	    <label>CUSTO DE PRODUÇÃO</label></br>
+    	    R$<input type="text" id="money" name="Custo_da_produção"action="produzidos.php"maxlength="18"size="50px"  required/></br>
+    	    <label>PREÇO DE VENDA</label></br>
+    	    R$<input type="text" id="money" name="Preço_da_venda"action="produzidos.php"maxlength="14"size="50px" required/></br>
+    	 </fieldset>
+    	 <hr>
+    	 <fieldset>
+    	  <h3>SELECIONE O CÓDIGO DO PRODUTO</h3>
+    	  <label for="Código" value="Código" riquered>Clicar no espaço abaixo e escolher o Código</label></br>
+    	    <select name="Código" size="1" multiple="2">Navegue com teclado &#8595; Escolha.
+    	    <option value="001" name="A" size="1" required>Cadeira código 001</option>
+    	    <option value="002" name="B" size="1" required>Mesa códico 002</option>
+    	    <option value="003" name="C" size="1" required>Conjunto código 003</option><br>
+    	    </select>
+    	    <input type="submit" value="Enviar">
+            <input type='hidden' name='btnOK' value="Enviar o código depois de produzido o móvel para a tabela produzidos no banco">
+       	 </fieldset>
+         <hr> 
+    	 <fieldset>
+    	    <h3>SELECIONE O MODELO DO PRODUTO</h3>
+    	    <label for="Modelo" value="Modelo"riquered>Clicar no espaço abaixo e escolher o modelo</label></br>
+    	    <select name="Modelo" size="1" multiple="2">Navegue com o teclado &#8595; e escolha
+    	    <option value="A"name="Cadeira_id"size="1" riquered>Cadeira modelo</option>
+    	    <option value="B"name="Mesa_id"size="1" riquered>Mesa modelo</option>
+    	    <option value="C"name="Conjunto_id"size="1" riquered>Conjunto modelo</option>
+    	    <br>
+	    <input type="submit" value="Enviar">
+            <input type='hidden' name='btnOK' value="Enviar o modelo depois de produzido o móvel para a tabela produzidos no banco.">
+    	    </select><br>
+    	</fieldset>
+    	<hr> 
+    	  <p>AGORA QUE VOÇÊ JA ESCOLHEU O CÓDIGO DO PRODUTO CONFIRME NO BOTÃO PARA ADICIONAR AO ESTOQUE</p></br>
+    </form>
+    <input type="submit" value="Enviar">
+    </fieldset>
+</caption>
+  </div>
+  </div>
+</section>
+</div>
+<div class=".side .footer">
+	<footer><h1>PRODUÇÃO DE MÓVEIS ARTESANAIS - ESPECÍFICO PARA A FÁBRICA</h1></footer>
+</div>
+</div>
+</body>
+</html>

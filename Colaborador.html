@@ -1,0 +1,33 @@
+<!Doctype xhtml>
+<xhtml-PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<xhtml xmlns="http://www.w3.org/1999/xhtml"lang="pt-br, ISO 639-standard">
+<head>
+<meta http=equiv="Contetent-Type" content="text/html; charset =utf-8">
+<meta properly="Ednilson Alves"author"Ednilson Alves"content="HTML, CSS, PHP, MySQL, JavaScript">
+<meta http-equiv="X-UA-Compatible"Content="IE-edge, Chrome, Firefox, Ópera, Brave">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<link href="Site_Gostar/Fabrica/fabricafolha.css" rel="stylesheet" type="text/css" media="all">
+<title>Insere_Colaborador</title>
+</head>
+<body class="fundo.fabrica">
+<header><h1><img src="foto4.png" id="1" width="50px" height="50px">DENTRO DA FÁBRICA</h1></header>
+<p class="Titulo.App">SITE_GOSTAR</p>
+<p class="Titulo.Pagina">COLABORADOR</p>
+<br><br>
+<caption>
+    <fieldset><legend><h3>FORMULÁRIO DE CADASTRO DE COLABORADORES DO GOSTAR</h3></legend>
+    <form method="POST" name="Colaborador" id="CPF_id"action="insereColaborador.php" . action="<?php echo $_SERVER['PHP_SELF'];?> enctype="multipart/form-data">
+    	    <p>Limpe os campos dos formulários antes de fazer os lançamentos</p><br>
+    	    <input type="reset"type="reset"value="Limpar os campos"action="insereColaborador.php"/><br><br>
+    	  <hr><fieldset><legend>CADASTRO DE COLABORADORES DO GOSTAR</legend>
+    	    <br><label>NUMERO DO CPF</label></br>
+    	    <input type="int"name="CPF_id"action="insereColaboradorphp" placeholder="CPF" maxlength="11"size="50px" required/></br>
+    	    <label>NOME DO COLABORADOR</lable></br>
+    	    <input type="text"name="Nome_id"action="insereColaborador.php" placeholder="Nome" maxlength="100"size="50px"  required/></br>
+    	    <label>SENHA PARA ACESSO EXTERNO AO GOSTAR</label></br>
+    	    <input type="bolean"name="Senha_id"action="insereColaborador.php" placeholder="senha"maxlength="8"size="50px"  required/></br>
+    	    </fieldset>
+    	    <input type="submit" value="Enviar">
+            <input type='hidden' name='btnOK' value="Cadastrar o colaborador">
+     </form>
+</caption>

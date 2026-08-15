@@ -1,0 +1,51 @@
+[Licenca.md]:
+
+[EULA - End User License Agrement (EULA)];
+Acordo de Licenca - Software Proprietário:
+
+É proibida a distribuição sem um contrato de compra e venda.
+
+As características são de uso e Software de rede local, insere-se como 'licença de rede' no formato '.NET'.
+
+O serviço atua em rede local para gerênciar produtos em pequenas entidades públicas e empresas privadas.
+Pode ser negociada a adequação do software para configuração em nuvem e a distribuição de acessos por rede de internet no fomato de repositório e containers no intuito de negociar venda de produtos.
+A gerência da aplicação inicialmente atua em rede local com característica de software proprietário.
+
+[JAVA]
+mavem: (Patch:[JAVA_HOME . M2_HOME]) 
+on:
+main: @home/ovni/htdocs/Site_Gostar
+push: @Site_Gostar@localhost
+
+[CI]
+ci: on
+pushe: @home/ovni/htdocs/Site_Gostar@localhost
+[my-app: Site_Gostar]
+software_properly: Ednilson Alves Ribeiro
+author: Ednilson
+mail: ["ribeiroednilson@gmail.com"]
+region: Brasil
+location: @ovni@ovni-inspiron-1545:3306
+$url="127.0.0.1",
+$host="mysql",
+$port="3306", 
+$user="mysql",
+$passwd="5eHPHoFhkU6l4Jzg",
+$db="Like_DB.sql",
+[pom.xml]
+<?xml version="1.0" encoding="UTF-8"?>
+    <modules>
+        <parent xmlns="https://Site_Gostar.com"
+            xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation=https://Site_Gostar.com local_schema.xsd"
+            https://Site_Gostar.com local_schema.xsd">
+            <child>home/ovni/htdocs/Site_Gostar</child>
+            <packaging>pom</packaging>
+            <modelVersion>4.0.0</modelVersion>
+            <grouId>com.Site_Gostar</grouId>
+            <artifactId>Site_Gostar</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <description>https://Site_Gostar@olocalhost:3306</description>
+        </parent>
+    </modules>
+</project>

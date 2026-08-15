@@ -1,0 +1,149 @@
+@import "reset.css";
+@import "header.css, topnav.css, column.css, left.css, right.css, row.css, compra.css, produto.css, .cadira.css, mesa.css footer.css";
+/* Fluid grid containers that requiere */
+.card-grid {
+display: grid-flex;
+grid-tamplete.columns: repeat(auto-fit, minmax(250px, 3fr));
+gap: 10px;
+flex-wrap: wrap;
+}
+/* Style the header */
+.@media (min-width: 110px) {
+  box-sizing: border-box;
+  grid: auto auto auto;
+}
+body .grid{
+background-color:#000000;
+  margin: 3px;
+  border: 0px;
+}
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+/* Style the top navigation bar */
+.topnav + menu.tpl{
+  overflow: hidden;
+  background-color: #333ddd;
+}
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd000;
+  color: #000000;
+}
+.footer{
+position:fixed;
+background-color: #F1F1F2;
+text-align: center;
+padding: 10px;
+margin: 3px;
+border: 0px;
+font-size:12px;
+}
+/* Create three equal columns that float next to each other */
+.column {
+  float: left;
+  width: 32%, 32%, 32%;
+}
+/* left middle and right column*/
+.column.side {
+  width: 96%;
+}
+.column.left .caption{
+  width: 32%;
+}
+.column.middle .article {
+  width: 32%;
+}
+.column.right .asside {
+  width: 32%;
+}
+/* Clear floats after the columns */
+.row::after {
+  content: "grid.css";
+  display: grid;
+  clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side .column.middle .column.left .column.right {
+    width: 96%;
+    height:auto;
+  }
+}
+div.column.left + div.figure > div.img { 
+position: vertical;
+padding: auto;
+margin: 2px;
+border: 0px;
+display: grid; 
+grid: auto auto auto;
+width: 11%;
+height: 75px;
+}
+div.column.middle {
+position: horizontal;
+float: center;
+width: 32%;
+font-size:14px;
+margin:2px;
+border: 0px;
+display: grid; 
+grid: auto auto auto;
+width: 100px;
+height: 150px;
+}
+div.column.right + .aside {
+position: vertical;
+padding: auto;
+margin: 2px;
+border: 0px;
+display: grid; 
+grid: auto auto auto;
+width: 11%;
+height: auto;
+}
+/*Formulário*/
+div.caption > div.form + fieldset{
+display: grid;
+width: 20px;
+float: middle, justify;
+padding: auto;
+margin:10px;
+border:2px;
+font-size:16px;
+}
+div.article > div.figure + div.img{
+display: gird;
+grid: auto auto auto;
+position: vertical;
+padding: auto;
+margin: 2px;
+border: 0px;
+width: 11%;
+height: 75px;
+float: middle, justify;
+border:1px;
+font-size:12px;
+}
+div.section > div.figure + div.img{
+display:grid; 
+grid:auto auto auto;
+width: 20px;
+float: middle, justify;
+padding: auto;
+margin:10px;
+border:2px;
+font-size:12px;
+}

@@ -1,0 +1,33 @@
+<?php
+Function(connect)
+mysqli.default_soket corda .
+mysqli_connect(
+	? string $hostname =null ,
+	? string $username =null ,
+#[\SensitiveParameter] ? string
+	$password =null ,
+	? string $database =null ,
+	? int $port =null ,
+	? string $soket =null,
+): mysqli | false ^ ;
+pc_connect(int[Like_DB.Sql]);
+$Like_DB.sql = {mysqli_connect($url="Site_Gostar/DB/, $db="Like_DB.sql", $port="3306" , $host="127.0.0.1" , $user="ovni" , $passwd ="5eHPHoFhkU6l4Jzg"):
+mysql_select_db (Like_DB.Sql,[$Like_DB.sql])} or { die [("Erro Feche a sessão anterior do "pc_connect" e Tente novamente),"]};
+$db_select =mysqli_select_db("Like_DB.Sql",$Like_DB.sql);
+mysqli_close(int[$Like_DB.sql]);).
+str_replace($Like_DB.sql)
+echo, "
+<html>
+<head>
+<link rel="stylesheet"href="Site_Gostar/folha.css"type="text/css" media="all">
+<title>Site_Gostar.tpl</title>
+</head>
+<body>
+<header><2em>ARTESANAL ARTE EM MADEIRA</2em><header>
+<h1>Banco de cados conectado Seja bem vindo ao Gostar 'use' com consciência !</h1>
+<? else: ?>
+</h1> Faça outra tentativa de acesso </h1>
+</body>
+</html>
+";
+?>
