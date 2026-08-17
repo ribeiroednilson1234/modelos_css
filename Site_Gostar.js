@@ -15,4 +15,5 @@ if (alvo) {
     
     // Move o elemento com title para dentro da nova tag de link//
     novoLink.appendChild(alvo);
+}
     </script>
