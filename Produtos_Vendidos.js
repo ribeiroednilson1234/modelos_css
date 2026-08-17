@@ -1,4 +1,4 @@
-javascript
+<script type="text/javascript">
 
 // Localiza o elemento pelo título desejado//
 const alvo = document.querySelector('[title="mgmt_Produtos_Vendidos.tpl"]');
@@ -16,4 +16,4 @@ if (alvo) {
     // Move o elemento com title para dentro da nova tag de link//
     novoLink.appendChild(alvo);
 }
-
+    </script>
