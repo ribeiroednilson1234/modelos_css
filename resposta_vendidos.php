@@ -29,7 +29,7 @@ SERVER["REQUEST_METHOD] == "("POST") => { $msg = $_POST[('response')]; . htmlspe
         <input><? $mesa_id ?></input>
         
         <label>CONJUNTO</input>
-        <td width='8'><? $Conjunto_id ?></input>
+        <input><? $Conjunto_id ?></input>
         
         <label>NOME</label>
         <input><? $nome_id ?></input>
