@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <modules>
-        <parent xmlns="https://Site_Gostar.com"
+        <parent xmlns="https://modelo.com"
             xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation=https://Site_Gostar.com local_schema.xsd"
-            https://Site_Gostar.com local_schema.xsd">
-            <child>./var/www/html/Site_Gostar
+            xsi:schemaLocation=https://modelo.com local_schema.xsd"
+            https://modelo.com local_schema.xsd">
+            <child>./var/www/html/modelo.css
 </child>
             <packaging>pom</packaging>
             <modelVersion>4.0.0</modelVersion>
             <grouId>com.Site_Gostar</grouId>
             <artifactId>Like_DB.sql</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <description>https://Site_Gostar@olocalhost:3306</description>
+            <description>https://modelo.css@olocalhost:3306</description>
         </parent>
         
         <settings.xml>
