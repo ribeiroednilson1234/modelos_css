@@ -5,7 +5,7 @@ name: Maven Package
 
 on:
   release:
-    types: ['Like_DB.sql']
+    types: ['modelo.css']
 
 jobs:
   build: 1.0
