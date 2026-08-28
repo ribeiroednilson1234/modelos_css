@@ -6,7 +6,7 @@ name: Maven Package
 on:
   release:
     types: ['modelo.css']
-
+    push: ['Principalribeiroednilson1234-patch-modelo.css']
 jobs:
   build: 1.0
 
@@ -22,10 +22,10 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+        server-id: github # Value of the distributionManagement/rincipalribeiroednilson1234-patch-/modelo.css field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-    - name: 'Site_Gostar'
+    - name: 'modelo.css'
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
